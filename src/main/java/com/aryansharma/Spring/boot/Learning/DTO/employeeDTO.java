@@ -8,10 +8,9 @@ package com.aryansharma.Spring.boot.Learning.DTO;
 
 //==> inside Employee we can define the fields that can employee have.
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
-public class employeeEntity {
+public class employeeDTO {
 
     private long id;
     private String name;
@@ -30,12 +29,12 @@ public class employeeEntity {
 
     // --> Default Construtor
 
-    public employeeEntity() {
+    public employeeDTO() {
     }
 
     // --> all Argument Constructor
-    public employeeEntity(long id, String name, String email, String password, Integer age,
-            LocalDateTime dateofjoinning, Boolean isactive) {
+    public employeeDTO(long id, String name, String email, String password, Integer age,
+                       LocalDateTime dateofjoinning, Boolean isactive) {
         this.id = id;
         this.name = name;
         this.email = email;

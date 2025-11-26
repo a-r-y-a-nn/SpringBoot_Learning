@@ -23,7 +23,7 @@ WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
 [INFO] -------------------------------------------------------------
 [ERROR] COMPILATION ERROR : 
 [INFO] -------------------------------------------------------------
-[ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/DTO/employeeEntity.java:[50,12] constructor employeeEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.lang.String) is already defined in class com.aryansharma.Spring.boot.Learning.DTO.employeeEntity
+[ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/DTO/employeeEntity.java:[50,12] constructor employeeEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.lang.String) is already defined in class com.aryansharma.Spring.boot.Learning.DTO.employeeDTO
 [ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/Controller/EmployeeController.java:[31,5] org.springframework.web.bind.annotation.GetMapping is not a repeatable annotation interface
 [ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/Controller/EmployeeController.java:[35,115] incompatible types: boolean cannot be converted to java.lang.String
 [INFO] 3 errors 
@@ -35,7 +35,7 @@ WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
 [INFO] Finished at: 2025-11-26T02:19:32+05:30
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project Spring-boot-Learning: Compilation failure: Compilation failure: 
-[ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/DTO/employeeEntity.java:[50,12] constructor employeeEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.lang.String) is already defined in class com.aryansharma.Spring.boot.Learning.DTO.employeeEntity
+[ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/DTO/employeeEntity.java:[50,12] constructor employeeEntity(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.time.LocalDate,java.lang.String) is already defined in class com.aryansharma.Spring.boot.Learning.DTO.employeeDTO
 [ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/Controller/EmployeeController.java:[31,5] org.springframework.web.bind.annotation.GetMapping is not a repeatable annotation interface
 [ERROR] /C:/Users/siddh/OneDrive/Desktop/Spring-boot-Learning/src/main/java/com/aryansharma/Spring/boot/Learning/Controller/EmployeeController.java:[35,115] incompatible types: boolean cannot be converted to java.lang.String
 [ERROR] -> [Help 1]

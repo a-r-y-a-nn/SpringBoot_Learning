@@ -1,11 +1,7 @@
 package com.aryansharma.Spring.boot.Learning.Controller;
 
-import com.aryansharma.Spring.boot.Learning.DTO.employeeEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.time.LocalDate;
+import com.aryansharma.Spring.boot.Learning.DTO.employeeDTO;
+import org.springframework.web.bind.annotation.*;
 
 //restController Annotation ==> will make sure that the mapping defined inside the controller
 //==> are rest in Nature.
@@ -22,14 +18,35 @@ public class EmployeeController {
     // return "Secret Message: Hello World!";
     // }
 
-    // we can use EmployeeEntity to transfer the Data from out springboot
+    // we can use EmployeeDTO to transfer the Data from out springboot
     // Application.
     // so this will return EmployeeDTO || and (i can call get Employee by id)
     @GetMapping("/employee/{employeeID}")
 
-    public employeeEntity getEmployee(@PathVariable Long employeeID) {
+    public employeeDTO getEmployee(@PathVariable Long employeeID) {
         // here i can take ID as Input.
-        return new employeeEntity(1L, "Aryan", "aryansharma@gmail.com", "password", 23, java.time.LocalDateTime.now(),
+        return new employeeDTO(1L, "Aryan", "aryansharma@gmail.com", "password", 23, java.time.LocalDateTime.now(),
                 true);
     }
+
+    @GetMapping(path = "/employees" )
+    public String getAllEmployees(@RequestParam Integer age) {
+        return "Hi age: " + age;
+    }
+
+
+    //==> Post Mapping Are Generally used whenever you want to create an Employee
+    @PostMapping
+    public String CreateNewEmployee(){
+        return "Hello From New Employee";
+    }
+
+    //==>Put Mapping are Generally used whenever you want to update an Employee
+    @PutMapping
+    public String UpdateEmployee(){
+        return "Hello From Update";
+    }
+
 }
+
+//==>
